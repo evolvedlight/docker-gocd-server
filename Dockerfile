@@ -3,7 +3,7 @@ MAINTAINER Andrei Serdeliuc, andrei@apikot.com
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu saucy main universe" > /etc/apt/sources.list
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get install -y wget openjdk-7-jre-headless curl unzip
+RUN apt-get install -y wget openjdk-7-jre-headless curl unzip git subversion mercurial
 
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
